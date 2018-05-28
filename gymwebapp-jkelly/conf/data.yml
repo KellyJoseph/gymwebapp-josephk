@@ -1,0 +1,45 @@
+Assessment(a1):
+  weight: 75
+  thigh: 20
+  upperArm: 20
+  waist: 20
+  hips: 20
+Assessment(a2):
+  weight: 70
+  thigh: 20
+  upperArm: 20
+  waist: 20
+  hips: 20
+Assessment(a3):
+  weight: 65
+  thigh: 20
+  upperArm: 20
+  waist: 20
+  hips: 20
+
+Member(m1):
+  firstname: Joe
+  secondname: Kelly
+  email: email1
+  password: secret
+  height: 1.76
+  gender: M
+  assessments:
+  - a1
+  - a2
+
+Member(m2):
+  firstname: Eri
+  secondname: Nishida
+  email: email2
+  password: secret
+  height: 1.73
+  gender: F
+  assessments:
+  - a3
+
+Trainer(t1):
+  firstname: Sean
+  secondname: Walsh
+  email: email3
+  password: secret

@@ -1,0 +1,37 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+#{menu id:"user"/}
+
+<section class="ui raised segment">
+    <header class="ui header">
+    ${activeMember.firstname} ${activeMember.lastname}'s Details
+    </header>
+    <table class ="ui fixed table">
+        <thead>
+        <td>
+            First Name: ${activeMember.firstname}
+        </td>
+        <td>
+            Last Name: ${activeMember.lastname}
+        </td>
+        <td>
+            email: ${activeMember.email}
+        </td>
+        <td>
+            password: ${activeMember.password}
+        </td>
+        <td>
+            Starting Weight (kg): ${activeMember.startWeight}
+        </td>
+        <td>
+            Height (m): ${activeMember.height}
+        </td>
+        <td>
+            Gender: ${activeMember.gender}
+        </td>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+#{setAccountDetails /}
+</section>

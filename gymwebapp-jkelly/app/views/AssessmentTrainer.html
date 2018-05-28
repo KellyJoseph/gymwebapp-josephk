@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'Member Assessments' /}
+#{menu id:"assessmentstrainer"/}
+
+<section class="ui raised segment">
+    <header class="ui header">
+    ${activeMember.firstname} ${activeMember.lastname}'s Assessments
+    </header>
+    <table class ="ui fixed table">
+        <thead>
+        <td>
+            Member <i class="huge user icon"></i> ${activeMember.firstname} ${activeMember.lastname}
+        </td>
+        <td>
+            BMI <i class="huge heartbeat icon"></i> ${BMI}
+        </td>
+
+        <td>
+            Ideal Weight <i class="huge balance scale icon"></i> ${idealWeight} (kg)
+        </td>
+        <td>
+            BMI Category <i class="huge heart outline icon"></i> ${bmiCategory}
+        </td>
+        </thead>
+        <tbody>
+        #{ListAssessmentsTrainerView assessments:assessments /}
+        </tbody>
+    </table>
+</section>
+#{AddAssessment /}

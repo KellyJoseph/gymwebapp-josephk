@@ -1,0 +1,42 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                                       Start.index
+GET     /dashboard                                              Dashboard.index
+GET     /about                                                  About.index
+
+GET     /dashboard/deleteassessment/{id}                        Dashboard.deleteAssessment
+GET     /admintrainer                                           AdminTrainer.index
+GET     /admintrainer/deleteaccount/{id}                        AdminTrainer.deleteAccount
+GET     /assessmentstrainer/{id}                                AssessmentsTrainer.index
+GET     /about                                                  About.index
+GET     /user                                                   User.index
+GET     /signup                                                 Accounts.signup
+GET     /login                                                  Accounts.login
+GET     /logout                                                 Accounts.logout
+POST    /assessments/{id}/addassessment/{assessmentid}          Dashboard.addAssessment
+POST    /register                                               Accounts.register
+POST    /admintrainer/addcomment/{id}                            AdminTrainer.addComment
+POST    /authenticate                                           Accounts.authenticate
+POST    /authenticateTrainer                                    Accounts.authenticateTrainer
+POST    /setFirstName                                           Dashboard.setFirstName
+POST    /setLastName                                            Dashboard.setLastName
+POST    /setEmail                                               Dashboard.setEmail
+POST    /setPassword                                            Dashboard.setPassword
+POST    /setHeight                                              Dashboard.setHeight
+POST    /setStartWeight                                         Dashboard.setStartWeight
+POST    /setGender                                              Dashboard.setGender
+
+
+
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

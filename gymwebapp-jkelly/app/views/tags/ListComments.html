@@ -1,0 +1,21 @@
+<table class ="ui fixed table">
+    <thead>
+    <tr>
+        <th>Trainer Comments</th>
+        <th>Delete</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    #{list items: _assessments, as: 'assessment'}
+    <tr>
+        <td>
+        ${comment.trainerComment}
+        </td>
+        <td>
+            <a href="/dashboard/deletecomment/${assessment.id} " class ="ui medium red button">Delete</a></td>  </a>
+        </td>
+    </tr>
+    #{/list}
+    </tbody>
+</table>
