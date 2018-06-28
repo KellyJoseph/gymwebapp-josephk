@@ -8,6 +8,9 @@ I have implemented all of the features in Excellent
 level, and some of the features in Outstanding level
 
 The app has been deployed at this address: http://gymwebapp-jkelly.herokuapp.com/
+to log in as a pre loaded trainer, use email3 and secret as the log in and password.
+to log in as a pre loaded user, try email1 or email2 and secret as the log in and password.
+Alternatively you can create a new account.
 
 The git repository for this app can be found at: https://github.com/KellyJoseph/gymwebapp-josephk
 
